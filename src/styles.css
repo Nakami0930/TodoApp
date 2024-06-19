@@ -31,8 +31,10 @@ input, button {
 .task {
     display: flex;
     justify-content: space-between;
+    align-items: center; /* 追加 */
     padding: 10px;
     border-bottom: 1px solid #ddd;
+    white-space: nowrap; /* 追加 */
 }
 
 .task button {
