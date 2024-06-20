@@ -15,6 +15,9 @@ function addTask() {
         span.textContent = taskText;
         span.addEventListener('click', () => {
             li.classList.toggle('completed');
+            if (li.classList.contains('completed')) {
+                showCongratsMessage();
+            }
             filterTasks();
         });
         
@@ -45,6 +48,19 @@ function filterTasks() {
             task.style.display = showCompleted ? 'flex' : 'none';
         }
     });
+}
+
+function showCongratsMessage() {
+    const messages = ["おめでとう!", "よくやった!", "素晴らしい!", "やったね!"];
+    const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+    const congratsMessageElement = document.getElementById('congrats-message');
+    
+    congratsMessageElement.textContent = randomMessage;
+    congratsMessageElement.classList.remove('hidden');
+    
+    setTimeout(() => {
+        congratsMessageElement.classList.add('hidden');
+    }, 3000); // 3秒後にメッセージを非表示にする
 }
 
 // 初期ロード時に完了タスクを表示するためのフィルタリング
