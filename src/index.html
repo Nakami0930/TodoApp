@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ToDo App</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.rawgit.com/phi-jp/phina.js/develop/build/phina.min.js"></script>
 </head>
 <body>
     <div id="app">
@@ -17,8 +18,11 @@
         </label>
         <ul id="task-list"></ul>
         <p id="congrats-message" class="hidden"></p> 
+        <button id="start-game-btn" class="hidden">ゲーム開始</button>
+    </div>
+    <div id="game" class="hidden">
+        <div id="phina-game-container"></div>
     </div>
     <script src="script.js"></script>
 </body>
 </html>
-

@@ -82,12 +82,18 @@ input[type="checkbox"] {
     background-color: #f1f1f1;
 }
 
+.task span {
+    flex-grow: 1;  
+    overflow: visible;  
+}
+
 .task button {
     background: none;
     border: none;
     cursor: pointer;
     color: red;
     font-size: 14px;
+    margin-left: 10px; 
 }
 
 .task.completed span {
@@ -105,3 +111,17 @@ input[type="checkbox"] {
     display: none;
 }
 
+#game {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#phina-game-container {
+    width: 100%;
+    height: 100%;
+}
