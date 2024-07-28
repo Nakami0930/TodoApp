@@ -12,11 +12,8 @@
 
 ## 使用方法
 1.リポジトリをクローンするか、ZIPファイルをダウンロードして解凍します。
-コードをコピーする
-'''　git clone https://github.com/Nakami0930/TodoApp.git '''
-
+2.コードをコピーする
+```　git clone https://github.com/Nakami0930/TodoApp.git ```
 3.ブラウザで index.html を開きます。
-
 4. タスクを追加して、5つのタスクを完了させます。
-
 5.「ゲーム開始」ボタンが表示されたらクリックして、ゲームを楽しみます
